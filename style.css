@@ -1,0 +1,255 @@
+:root {
+    --main-color: #0f6de7;
+    --black: #000000;
+    --bg: #ecf009;
+    --white: #fff;
+    --border: 0.1rem solid rgb(228, 224, 30);
+    font-size: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: var(--border);
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.header section {
+    justify-content: center;
+    display: flex;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+ }
+
+.navbar a {
+    margin: 3rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: var(--bg);
+    border-bottom: 0.1rem solid var(--bg);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+    border-bottom: 0.1rem solid var(--bg);
+}
+
+.btn {
+    background: var(--main-color);
+    color: #ffffff;
+    padding: 1rem 6rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+    background: #012a68;
+}
+
+.home-container {
+    background: url("../img/Fundo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-container section {
+    min-height: 100vh;
+    display: flex;
+    margin-top: 90px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o container */
+    padding: 0 20px;
+}
+
+.content {
+    max-width: 100vh;
+}
+
+.content h1 {
+    color: #fcf9f9;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    color: #fcfcfc;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+
+
+
+
+.title {
+    border-bottom: 0.1rem solid var(--black);
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.title span {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: #5c5c5c60;
+    gap: 1.5rem;
+}
+.about .row .content {
+    pad: 2rem;
+}
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #fcfcf9;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+
+.img-remoto {
+    background: url("./img/remoto.png");
+    background-position: center;
+    background-size: cover;
+}
+.img-remoto section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.box-container .box {
+    text-align: center;
+    padding: 5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 2rem 0;
+    line-height: 1.8;
+}
+.review .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.instagram {
+    text-align: center;
+}
+.instagram .icons-instagram {
+    padding: 1rem 0;
+}
+.instagram .icons-instagram img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.instagram .icons-instagram img:hover {
+    background-color: var(--main-color);
+}
