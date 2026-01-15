@@ -96,7 +96,7 @@ section {
 .home-container section {
     min-height: 100vh;
     display: flex;
-    pedding-top: 50px;
+    pedding-top: 15rem;
 }
 
 .container {
@@ -254,5 +254,6 @@ section {
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
 }
+
 
 
