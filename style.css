@@ -87,7 +87,7 @@ section {
 }
 
 .home-container {
-    background: url("../img/Fundo.png");
+    background: url("../img/fundo.png");
     background-size: cover;
     background-position: center;
 }
@@ -252,4 +252,5 @@ section {
 }
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
+
 }
