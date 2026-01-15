@@ -97,7 +97,7 @@ section {
 .home-container section {
     min-height: 100vh;
     display: flex;
-    margin-top: 40px; /* removido excesso de margem que escondia o fundo */
+    margin-top: 50px; /* removido excesso de margem que escondia o fundo */
 }
 
 .container {
@@ -241,4 +241,5 @@ section {
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
 }
+
 
