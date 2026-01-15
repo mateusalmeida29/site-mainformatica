@@ -7,7 +7,6 @@
     font-size: 10px;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -23,14 +22,12 @@ body {
     background-color: var(--black);
 }
 
-/* Seções */
 section {
     padding: 5rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -46,7 +43,8 @@ section {
 .header section {
     justify-content: center;
     display: flex;
-    padding: 2.7rem 0;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
 }
 
 .navbar a {
@@ -62,7 +60,17 @@ section {
     font-size: 2rem;
 }
 
-/* Botões */
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+    border-bottom: 0.1rem solid var(--bg);
+}
+
 .btn {
     background: var(--main-color);
     color: #ffffff;
@@ -78,25 +86,31 @@ section {
     background: #012a68;
 }
 
-/* Home / Banner */
+/* Ajuste apenas do fundo da home */
 .home-container {
-    height: 100vh; /* garante altura total da tela */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
     background: url("https://mateusalmeida29.github.io/Site-Mateus/img/fundo.png") no-repeat center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-.home-container .container {
-    text-align: center;
+.home-container section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0; /* removido excesso de margem que escondia o fundo */
+}
+
+.container {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.home-container .content {
-    max-width: 100%;
+.content {
+    max-width: 100%; /* antes era 100vh, agora é correto */
 }
 
 .content h1 {
@@ -113,7 +127,7 @@ section {
     padding: 1rem 0;
 }
 
-/* Títulos das seções */
+/* Títulos */
 .title {
     border-bottom: 0.1rem solid var(--black);
     font-size: 3rem;
@@ -138,7 +152,7 @@ section {
 }
 
 .about .row .content {
-    padding: 2rem; /* corrigido 'pad' -> padding */
+    padding: 2rem; /* corrigido pad -> padding */
 }
 
 .about .row .content h3 {
@@ -176,7 +190,12 @@ section {
     text-align: center;
     padding: 5rem;
     cursor: pointer;
+}
+
+.review .box-container .box {
     border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
 }
 
 .review .box-container .box p {
