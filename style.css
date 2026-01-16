@@ -101,7 +101,8 @@ section {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* centraliza o container */
+    margin: 0 auto;
+    /* centraliza o container */
     padding: 0 20px;
     margin-top: 40px;
 }
@@ -204,6 +205,7 @@ section {
     border-radius: 50%;
     padding: 1rem;
 }
+
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
 }
@@ -214,9 +216,9 @@ section {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  .home-container {
-    background-position: top center;
-  }
+    .home-container {
+        background-position: top center;
+    }
 }
 
 
@@ -239,4 +241,3 @@ section {
         font-size: 1.4rem;
     }
 }
-
