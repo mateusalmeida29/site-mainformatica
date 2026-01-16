@@ -85,20 +85,18 @@ section {
 
 /* HOME */
 .home-container {
-    min-height: 100vh;
+    min-height: 90vh;
     background: url("./img/fundo.png") center / cover no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home-container section {
-    min-height: 100vh;
     display: flex;
     margin-top: 89px;
 }
 
-
-.container {
+.content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -119,40 +117,44 @@ section {
 }
 
 /* TITULOS */
+
 .title {
+    text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
     color: var(--main-color);
-    margin-bottom: 4rem;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
 }
 
 .title span {
-    color: #fff;
+    color: #ffffff;
 }
 
 /* SOBRE */
 .about .row {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
 }
 
 .about .content h3 {
     font-size: 2.8rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 .about .content p {
     font-size: 1.6rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* AVALIAÇÕES */
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 10rem;
+    padding: 40px 0;
 }
 
 .box {
@@ -163,14 +165,15 @@ section {
 
 .box p,
 .box h3 {
-    color: #fff;
+    color: #ffffff;
+    font-size: 1.5rem;
 }
 
-.user {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin: 1rem auto;
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    margin: 2rem auto;
 }
 
 /* MAPA */
@@ -218,6 +221,8 @@ section {
 @media (max-width: 768px) {
     .home-container {
         background-position: top center;
+        background-size: contain;
+        height: 40vh;
     }
 }
 
@@ -241,4 +246,3 @@ section {
         font-size: 1.4rem;
     }
 }
-
