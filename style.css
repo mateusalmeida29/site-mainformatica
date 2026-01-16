@@ -60,17 +60,6 @@ section {
     font-size: 2rem;
 }
 
-.icons img {
-    margin: 1rem;
-    cursor: pointer;
-}
-
-.icons img:hover {
-    width: 40px;
-    height: 40px;
-    border-bottom: 0.1rem solid var(--bg);
-}
-
 .btn {
     background: var(--main-color);
     color: #ffffff;
@@ -162,18 +151,6 @@ section {
     line-height: 1.8;
 }
 
-.img-remoto {
-    background: url("./img/remoto.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.img-remoto section {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -236,7 +213,32 @@ section {
     background-color: var(--main-color);
 }
 
+.img-remoto {
+    background: url("./img/fundo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.img-remoto section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
 /* ------------------ MEDIA QUERIES RESPONSIVAS ------------------ */
+
+
+@media (max-width: 992px) {
+    .home-container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        min-height: 100vh;
+    }
+}
 
 /* Tablets e celulares grandes */
 @media (max-width: 992px) {
@@ -277,6 +279,16 @@ section {
 }
 
 /* Celulares pequenos */
+
+@media (max-width: 768px) {
+    .home-container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        min-height: 100vh;
+    }
+}
 @media (max-width: 768px) {
     .navbar a {
         margin: 1rem;
@@ -297,7 +309,8 @@ section {
     }
 
     .box-container {
-        grid-template-columns: 1fr; /* Boxes empilhados */
+        grid-template-columns: 1fr;
+        /* Boxes empilhados */
     }
 
     .home-container section {
@@ -307,6 +320,18 @@ section {
 }
 
 /* Celulares muito pequenos */
+
+@media (max-width: 480px) {
+    .home-container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
 @media (max-width: 480px) {
     .content h1 {
         font-size: 1.6rem;
