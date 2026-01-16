@@ -25,7 +25,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
 }
 
 section {
@@ -241,3 +241,4 @@ section {
         font-size: 1.4rem;
     }
 }
+
